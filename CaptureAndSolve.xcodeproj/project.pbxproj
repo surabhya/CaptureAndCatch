@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1E13051DE91CF500A5C4D8 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E13041DE91CF500A5C4D8 /* GCDBlackBox.swift */; };
+		4C48A7ED1DE8D43F00B59055 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C48A7EC1DE8D43F00B59055 /* Constants.swift */; };
+		4C48A7EF1DE8D63D00B59055 /* VisionAPIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C48A7EE1DE8D63D00B59055 /* VisionAPIMethod.swift */; };
 		4C8BB0041DE53703008AF71A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BB0031DE53703008AF71A /* AppDelegate.swift */; };
 		4C8BB0061DE53703008AF71A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BB0051DE53703008AF71A /* ViewController.swift */; };
 		4C8BB0091DE53703008AF71A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8BB0071DE53703008AF71A /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C1E13041DE91CF500A5C4D8 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
+		4C48A7EC1DE8D43F00B59055 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4C48A7EE1DE8D63D00B59055 /* VisionAPIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionAPIMethod.swift; sourceTree = "<group>"; };
 		4C8BB0001DE53703008AF71A /* CaptureAndSolve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaptureAndSolve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8BB0031DE53703008AF71A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C8BB0051DE53703008AF71A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,12 +103,15 @@
 		4C8BB0021DE53703008AF71A /* CaptureAndSolve */ = {
 			isa = PBXGroup;
 			children = (
+				4C1E13041DE91CF500A5C4D8 /* GCDBlackBox.swift */,
 				4C8BB0031DE53703008AF71A /* AppDelegate.swift */,
 				4C8BB0051DE53703008AF71A /* ViewController.swift */,
 				4C8BB0071DE53703008AF71A /* Main.storyboard */,
 				4C8BB00A1DE53703008AF71A /* Assets.xcassets */,
 				4C8BB00C1DE53703008AF71A /* LaunchScreen.storyboard */,
 				4C8BB00F1DE53703008AF71A /* Info.plist */,
+				4C48A7EC1DE8D43F00B59055 /* Constants.swift */,
+				4C48A7EE1DE8D63D00B59055 /* VisionAPIMethod.swift */,
 			);
 			path = CaptureAndSolve;
 			sourceTree = "<group>";
@@ -261,6 +270,9 @@
 			files = (
 				4C8BB0061DE53703008AF71A /* ViewController.swift in Sources */,
 				4C8BB0041DE53703008AF71A /* AppDelegate.swift in Sources */,
+				4C48A7ED1DE8D43F00B59055 /* Constants.swift in Sources */,
+				4C48A7EF1DE8D63D00B59055 /* VisionAPIMethod.swift in Sources */,
+				4C1E13051DE91CF500A5C4D8 /* GCDBlackBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +517,7 @@
 				4C8BB02A1DE53703008AF71A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C8BB02B1DE53703008AF71A /* Build configuration list for PBXNativeTarget "CaptureAndSolveTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				4C8BB02D1DE53703008AF71A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C8BB02E1DE53703008AF71A /* Build configuration list for PBXNativeTarget "CaptureAndSolveUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +535,7 @@
 				4C8BB0301DE53703008AF71A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
