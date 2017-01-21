@@ -95,7 +95,7 @@ extension ViewController {
                     }
                 }
             }
-            self.parseImageString(textInImage: textInImage)
+            self.loadImageString(textInImage: textInImage)
         }
         task.resume()
     }

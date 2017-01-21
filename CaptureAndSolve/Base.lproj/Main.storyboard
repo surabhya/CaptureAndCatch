@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -19,57 +19,108 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHo-7B-3m7">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jyI-rL-PCg">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="akL-8f-XUy">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f9M-aT-stP">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="6x0-i1-L0X"/>
+                                                    <constraint firstAttribute="width" constant="240" id="F6j-R9-lb2"/>
+                                                </constraints>
+                                            </imageView>
+                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bu-L4-OvZ">
+                                                <items>
+                                                    <barButtonItem title="Gallery" id="up9-mZ-0kd">
+                                                        <connections>
+                                                            <action selector="pickSecondImage:" destination="BYZ-38-t0r" id="R1v-GN-fZq"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem title="Camera" id="Eul-r3-fkq">
+                                                        <connections>
+                                                            <action selector="clickSecondImage:" destination="BYZ-38-t0r" id="lpI-ej-7Dq"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                </items>
+                                            </toolbar>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="4Yo-Mx-hoa"/>
+                                            <constraint firstAttribute="height" constant="172" id="Xl8-Sg-c1G"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QOK-8E-CIR">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rn2-Rp-ZpZ">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fHA-8a-m2e"/>
+                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyk-it-9NG">
+                                                <items>
+                                                    <barButtonItem title="Gallery" id="N8f-vO-VXw">
+                                                        <connections>
+                                                            <action selector="pickFirstImage:" destination="BYZ-38-t0r" id="YFV-oA-9hA"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem title="Camera" id="ZQf-pZ-ufU">
+                                                        <connections>
+                                                            <action selector="clickFirstImage:" destination="BYZ-38-t0r" id="MtI-By-LJs"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                </items>
+                                            </toolbar>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="N5P-VA-YU0" userLabel="height = 150"/>
+                                    <constraint firstAttribute="width" constant="240" id="zI0-9G-9gr"/>
+                                </constraints>
+                            </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2A-X2-3Ne">
                                 <items>
-                                    <barButtonItem title="Gallery" id="RMA-7C-ly2">
+                                    <barButtonItem title="Analyze" id="6hp-vZ-KxX">
                                         <connections>
-                                            <action selector="pickAnImage:" destination="BYZ-38-t0r" id="dKC-Bb-yyH"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Camera" id="83k-rp-LfU">
-                                        <connections>
-                                            <action selector="clickAnImage:" destination="BYZ-38-t0r" id="vPb-M7-Wq7"/>
+                                            <action selector="analyzeImage:" destination="BYZ-38-t0r" id="4Pw-fa-VB9"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V0P-4n-BdI"/>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Zj5-mx-kxf"/>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IgX-tD-10J">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="RWo-IW-uJa">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Jgk-Ff-9lp"/>
+                                    <constraint firstAttribute="width" constant="20" id="yEC-Tn-irk"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="V0P-4n-BdI" secondAttribute="trailing" constant="19" id="21i-LW-kv7"/>
-                            <constraint firstItem="uHo-7B-3m7" firstAttribute="top" secondItem="V0P-4n-BdI" secondAttribute="bottom" constant="234" id="8GC-Uf-4XJ"/>
-                            <constraint firstItem="uHo-7B-3m7" firstAttribute="top" secondItem="Zj5-mx-kxf" secondAttribute="bottom" constant="332" id="8aJ-bC-bHx"/>
-                            <constraint firstItem="Zj5-mx-kxf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="251" id="Cy0-fE-Wd7"/>
-                            <constraint firstItem="uHo-7B-3m7" firstAttribute="centerX" secondItem="V0P-4n-BdI" secondAttribute="centerX" id="D9b-FY-dyk"/>
-                            <constraint firstItem="V0P-4n-BdI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="52" id="Jqj-sQ-AcR"/>
-                            <constraint firstItem="IgX-tD-10J" firstAttribute="top" secondItem="V0P-4n-BdI" secondAttribute="bottom" constant="23" id="N1w-XY-GyO"/>
-                            <constraint firstItem="Zj5-mx-kxf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="161" id="VuI-HM-3a1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Zj5-mx-kxf" secondAttribute="trailing" constant="162" id="Wet-6A-m3C"/>
-                            <constraint firstItem="uHo-7B-3m7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YA5-t8-Zrb"/>
-                            <constraint firstItem="V0P-4n-BdI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="diu-8w-y8J"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IgX-tD-10J" secondAttribute="trailing" constant="19" id="gpV-s1-9Wx"/>
-                            <constraint firstItem="uHo-7B-3m7" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="jLG-He-hFW"/>
-                            <constraint firstItem="uHo-7B-3m7" firstAttribute="top" secondItem="IgX-tD-10J" secondAttribute="bottom" constant="36" id="lyX-m0-m4z"/>
-                            <constraint firstItem="IgX-tD-10J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="nM5-dO-GbX"/>
+                            <constraint firstItem="RWo-IW-uJa" firstAttribute="centerX" secondItem="l2A-X2-3Ne" secondAttribute="centerX" id="0nU-wC-ihc"/>
+                            <constraint firstItem="jyI-rL-PCg" firstAttribute="top" secondItem="RWo-IW-uJa" secondAttribute="bottom" constant="60" id="22g-D6-cnQ"/>
+                            <constraint firstItem="l2A-X2-3Ne" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6G4-LO-d1c"/>
+                            <constraint firstItem="jyI-rL-PCg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="RPH-Bo-4e3"/>
+                            <constraint firstItem="l2A-X2-3Ne" firstAttribute="top" secondItem="jyI-rL-PCg" secondAttribute="bottom" constant="72" id="XVW-AN-Fda"/>
+                            <constraint firstItem="l2A-X2-3Ne" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="f3G-fy-A1s"/>
+                            <constraint firstItem="QOK-8E-CIR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gl1-bS-7ty"/>
+                            <constraint firstItem="QOK-8E-CIR" firstAttribute="centerX" secondItem="l2A-X2-3Ne" secondAttribute="centerX" id="rTi-Ad-JxI"/>
+                            <constraint firstItem="QOK-8E-CIR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="v5f-fT-YFP"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cameraButton" destination="83k-rp-LfU" id="OUl-Ot-IFM"/>
-                        <outlet property="galleryButton" destination="RMA-7C-ly2" id="fwN-kL-6fV"/>
-                        <outlet property="imageView" destination="V0P-4n-BdI" id="8Mq-a7-DvI"/>
-                        <outlet property="spinner" destination="Zj5-mx-kxf" id="8EB-En-yAP"/>
-                        <outlet property="textView" destination="IgX-tD-10J" id="z0I-Qi-oyH"/>
+                        <outlet property="analyzeImageButton" destination="6hp-vZ-KxX" id="raB-VK-YDB"/>
+                        <outlet property="firstCameraButton" destination="ZQf-pZ-ufU" id="fex-ZF-iau"/>
+                        <outlet property="firstGalleryButton" destination="N8f-vO-VXw" id="EqU-1p-by7"/>
+                        <outlet property="firstImageView" destination="fHA-8a-m2e" id="D4f-tA-RaU"/>
+                        <outlet property="secondCameraButton" destination="Eul-r3-fkq" id="Tq5-Ek-F3m"/>
+                        <outlet property="secondGalleryButton" destination="up9-mZ-0kd" id="HPo-3H-qEr"/>
+                        <outlet property="secondImageView" destination="f9M-aT-stP" id="zYc-qr-alG"/>
+                        <outlet property="spinner" destination="RWo-IW-uJa" id="NJx-YH-WE2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="132" y="170.46476761619192"/>
         </scene>
     </scenes>
 </document>

@@ -106,12 +106,12 @@
 				4C1E13041DE91CF500A5C4D8 /* GCDBlackBox.swift */,
 				4C8BB0031DE53703008AF71A /* AppDelegate.swift */,
 				4C8BB0051DE53703008AF71A /* ViewController.swift */,
+				4C48A7EE1DE8D63D00B59055 /* VisionAPIMethod.swift */,
+				4C48A7EC1DE8D43F00B59055 /* Constants.swift */,
 				4C8BB0071DE53703008AF71A /* Main.storyboard */,
-				4C8BB00A1DE53703008AF71A /* Assets.xcassets */,
 				4C8BB00C1DE53703008AF71A /* LaunchScreen.storyboard */,
 				4C8BB00F1DE53703008AF71A /* Info.plist */,
-				4C48A7EC1DE8D43F00B59055 /* Constants.swift */,
-				4C48A7EE1DE8D63D00B59055 /* VisionAPIMethod.swift */,
+				4C8BB00A1DE53703008AF71A /* Assets.xcassets */,
 			);
 			path = CaptureAndSolve;
 			sourceTree = "<group>";
