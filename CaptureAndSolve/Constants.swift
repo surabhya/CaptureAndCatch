@@ -44,7 +44,6 @@ struct Constants {
         static let TEXT_ANNOTATIONS = "textAnnotations"
         static let DESCRIPTION = "description"
         static let RESPONSES = "responses"
-    }
-    
+    }    
 }
 

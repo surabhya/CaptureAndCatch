@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    // Image Picker Controller
     let firstImagePicker = UIImagePickerController()
     let secondImagePicker = UIImagePickerController()
     
@@ -32,12 +33,24 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     // Boolean value to determine image picker.
     var isFirstImageView = true
     
+    // Text from the image.
+    var textFromFirstImage: String = ""
+    var textFromSecondImage: String = ""
+    
+    // Text from the image processed.
+    var textFromFirstImageProcessed: Bool = false
+    var textFromSecondImageProcessed: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        firstImagePicker.delegate = self
-        secondImagePicker.delegate = self
+        self.firstImagePicker.delegate = self
+        self.secondImagePicker.delegate = self
         self.analyzeImageButton.isEnabled = false
+        self.textFromFirstImage = ""
+        self.textFromSecondImage = ""
+        self.textFromFirstImageProcessed = false
+        self.textFromSecondImageProcessed = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -80,12 +93,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.analyzeImageButton.isEnabled = false
         self.disableUI(boolean: true)
         if let binaryFirstImageData = base64EncodeImage(firstImageView.image!) as Optional {
-            createRequest(with: binaryFirstImageData as String)
+            createRequest(with: binaryFirstImageData as String, imageView: firstImageView)
         }
         if let binarySecondImageData = base64EncodeImage(secondImageView.image!) as Optional {
-            createRequest(with: binarySecondImageData as String)
+            createRequest(with: binarySecondImageData as String, imageView: secondImageView)
         }
         self.analyzeImageButton.isEnabled = true
+        if self.textFromFirstImageProcessed && self.textFromSecondImageProcessed {
+            performSegue(withIdentifier: "similaritySegue", sender: self)
+        }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -122,11 +138,25 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
-    func loadImageString(textInImage : String){
+    func getStringFromImage(textInImage : String, imageView: UIImageView){
         performUIUpdatesOnMain{
             self.disableUI(boolean: false)
             self.spinner.hidesWhenStopped = true
         }
-        print("Text from the image\n \(textInImage)")
+        if imageView == self.firstImageView {
+            self.textFromFirstImage = textInImage
+            self.textFromFirstImageProcessed = true
+        }else if imageView == self.secondImageView{
+            self.textFromSecondImage = textInImage
+            self.textFromSecondImageProcessed = true
+        }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let similarityViewController = segue.destination as? SimilarityViewController {
+            similarityViewController.textFromFirstImage = self.textFromFirstImage
+            similarityViewController.textFromSecondImage = self.textFromSecondImage
+        }
+    }
+    
 }

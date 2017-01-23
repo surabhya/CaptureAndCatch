@@ -46,7 +46,7 @@ extension ViewController {
         return components.url!
     }
     
-    func createRequest(with imageBase64: String) {
+    func createRequest(with imageBase64: String, imageView: UIImageView) {
         
         let session = URLSession.shared
         let jsonBody = "{\"\(Constants.VisionParameterURLKeys.REQUESTS)\":[{\"\(Constants.VisionParameterURLKeys.IMAGE)\":{\"\(Constants.VisionParameterURLKeys.CONTENT)\":\"\(imageBase64)\"},\"\(Constants.VisionParameterURLKeys.FEATURES)\":[{\"type\":\"\(Constants.VisionParameterFeatureTypeKeys.TEXT_DETECTION)\",\"\(Constants.VisionParameterURLKeys.MAX_RESULTS)\":10}]}]}"
@@ -95,7 +95,7 @@ extension ViewController {
                     }
                 }
             }
-            self.loadImageString(textInImage: textInImage)
+            self.getStringFromImage(textInImage: textInImage, imageView: imageView)
         }
         task.resume()
     }
