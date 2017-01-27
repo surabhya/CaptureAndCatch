@@ -41,6 +41,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var textFromFirstImageProcessed: Bool = false
     var textFromSecondImageProcessed: Bool = false
     
+    // Similarity for two images.
+    var similarity = -1.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,6 +54,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.textFromSecondImage = ""
         self.textFromFirstImageProcessed = false
         self.textFromSecondImageProcessed = false
+        self.similarity = -1.0
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -90,7 +94,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     
     @IBAction func analyzeImage(_ sender: AnyObject) {
-        self.analyzeImageButton.isEnabled = false
         self.disableUI(boolean: true)
         if let binaryFirstImageData = base64EncodeImage(firstImageView.image!) as Optional {
             createRequest(with: binaryFirstImageData as String, imageView: firstImageView)
@@ -98,9 +101,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if let binarySecondImageData = base64EncodeImage(secondImageView.image!) as Optional {
             createRequest(with: binarySecondImageData as String, imageView: secondImageView)
         }
-        self.analyzeImageButton.isEnabled = true
         if self.textFromFirstImageProcessed && self.textFromSecondImageProcessed {
-            performSegue(withIdentifier: "similaritySegue", sender: self)
+            createRequest(with: self.textFromFirstImage, text2: self.textFromSecondImage)
         }
     }
     
@@ -129,20 +131,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             self.firstGalleryButton.isEnabled = !boolean
             self.secondCameraButton.isEnabled = !boolean
             self.secondGalleryButton.isEnabled = !boolean
+            self.analyzeImageButton.isEnabled = !boolean
         } else {
             self.spinner.stopAnimating()
             self.firstCameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)
             self.firstGalleryButton.isEnabled = !boolean
             self.secondCameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)
             self.secondGalleryButton.isEnabled = !boolean
+            self.analyzeImageButton.isEnabled = !boolean
         }
     }
     
     func getStringFromImage(textInImage : String, imageView: UIImageView){
-        performUIUpdatesOnMain{
-            self.disableUI(boolean: false)
-            self.spinner.hidesWhenStopped = true
-        }
         if imageView == self.firstImageView {
             self.textFromFirstImage = textInImage
             self.textFromFirstImageProcessed = true
@@ -152,10 +152,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
+    func getSimilarityFromText(similarity : Double){
+        performUIUpdatesOnMain{
+            self.disableUI(boolean: false)
+            self.spinner.hidesWhenStopped = true
+        }
+        self.similarity = similarity
+        performSegue(withIdentifier: "similaritySegue", sender: self)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let similarityViewController = segue.destination as? SimilarityViewController {
             similarityViewController.textFromFirstImage = self.textFromFirstImage
             similarityViewController.textFromSecondImage = self.textFromSecondImage
+            similarityViewController.textSimilarity = self.similarity
         }
     }
     

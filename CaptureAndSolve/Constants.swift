@@ -10,12 +10,19 @@ struct Constants {
     
 
     struct GoogleVision {
-        static let APIKey = "AIzaSyBwdB9V_Q6D2skk3QvXtupHuW8ZffVPmxE"
+        static let APIKey = "AIzaSyB1dHWERwZ6IKbIRTjoWwFZlKr33PYfuTY"
         static let ApiScheme = "https"
         static let ApiHost = "vision.googleapis.com"
         static let ApiPath = "/v1/images:annotate"
     }
     
+    struct Dandelion {
+        static let APIKey = "5efb6212b4f045d2ae10ff42b24bf2fd"
+        static let ApiScheme = "https"
+        static let ApiHost = "api.dandelion.eu"
+        static let ApiPath = "/datatxt/sim/v1/"
+        
+    }
 
     // MARK: Vision Parameter Keys
     struct VisionParameterURLKeys {
@@ -26,6 +33,13 @@ struct Constants {
         static let TYPE = "type"
         static let MAX_RESULTS = "maxResults"
         static let KEY = "key"
+    }
+    
+    // MARK: Dandelion Parameter Keys
+    struct DandelionParameterURLKeys {
+        static let TEXT1 = "text1"
+        static let TEXT2 = "text2"
+        static let TOKEN = "token"
     }
     
     // MARK: Vision Parameter Keys
@@ -44,6 +58,16 @@ struct Constants {
         static let TEXT_ANNOTATIONS = "textAnnotations"
         static let DESCRIPTION = "description"
         static let RESPONSES = "responses"
-    }    
+    }
+    
+    // MARK: Dandelion Response Keys
+    struct DandelionResponseKeys {
+        static let TIME = "time"
+        static let SIMILARITY = "similarity"
+        static let LANG = "lang"
+        static let LANG_CONFIDENCE = "langConfidence"
+        static let TIME_STAMP = "timestamp"
+        static let OPTIONAL = "Optional"
+    }
 }
 

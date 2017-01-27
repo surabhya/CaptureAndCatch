@@ -42,7 +42,6 @@ extension ViewController {
         
         let queryItem = URLQueryItem(name: Constants.VisionParameterURLKeys.KEY, value: "\(Constants.GoogleVision.APIKey)")
         components.queryItems!.append(queryItem)
-        
         return components.url!
     }
     
@@ -56,7 +55,7 @@ extension ViewController {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue(Bundle.main.bundleIdentifier ?? "", forHTTPHeaderField: "X-Ios-Bundle-Identifier")
         request.httpBody = jsonBody.data(using: String.Encoding.utf8)
-        
+                
         var textInImage = ""
         
         let task = session.dataTask(with: request as URLRequest) { (data, response, error) in

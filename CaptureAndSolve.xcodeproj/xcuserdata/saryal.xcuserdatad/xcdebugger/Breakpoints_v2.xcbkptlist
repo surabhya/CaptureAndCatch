@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CaptureAndSolve/VisionAPIMethod.swift"
-            timestampString = "501810600.716069"
+            timestampString = "507167292.992488"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "createRequest(with:imageView:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CaptureAndSolve/VisionAPIMethod.swift"
-            timestampString = "501810600.716069"
+            timestampString = "507167292.992488"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "createRequest(with:imageView:)"
             landmarkType = "7">
             <Locations>
@@ -90,7 +90,39 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CaptureAndSolve/VisionAPIMethod.swift"
-            timestampString = "501810600.716069"
+            timestampString = "507167292.992488"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "createRequest(with:imageView:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaptureAndSolve/VisionAPIMethod.swift"
+            timestampString = "507167292.992488"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "createRequest(with:imageView:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaptureAndSolve/VisionAPIMethod.swift"
+            timestampString = "507167292.992488"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "76"
@@ -106,23 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CaptureAndSolve/VisionAPIMethod.swift"
-            timestampString = "501810600.716069"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "createRequest(with:imageView:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CaptureAndSolve/VisionAPIMethod.swift"
-            timestampString = "501810600.716069"
+            timestampString = "507167292.992488"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
@@ -138,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CaptureAndSolve/VisionAPIMethod.swift"
-            timestampString = "501810600.716069"
+            timestampString = "507167292.992488"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "createRequest(with:imageView:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,39 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CaptureAndSolve/VisionAPIMethod.swift"
-            timestampString = "501810600.716069"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "createRequest(with:imageView:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CaptureAndSolve/VisionAPIMethod.swift"
-            timestampString = "501817057.161407"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "createRequest(with:imageView:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CaptureAndSolve/VisionAPIMethod.swift"
-            timestampString = "501811198.726226"
+            timestampString = "507167292.992488"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
@@ -201,12 +185,28 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506840078.659938"
+            filePath = "CaptureAndSolve/VisionAPIMethod.swift"
+            timestampString = "507167292.992488"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "createRequest(with:imageView:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaptureAndSolve/ViewController.swift"
+            timestampString = "507167658.909502"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "7">
             <Locations>
@@ -250,23 +250,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506840078.659938"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
-            landmarkName = "getStringFromImage(textInImage:imageView:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506840078.659938"
+            timestampString = "507167658.909502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "147"
@@ -278,11 +262,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506840078.659938"
+            timestampString = "507167658.909502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "146"
@@ -298,7 +282,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506840078.659938"
+            timestampString = "507167658.909502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "147"
@@ -314,71 +298,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506840078.659938"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
-            landmarkName = "getStringFromImage(textInImage:imageView:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506840078.659938"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "getStringFromImage(textInImage:imageView:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506839624.853489"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "analyzeImage(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506839624.853489"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "analyzeImage(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506840078.659938"
+            timestampString = "507167658.909502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "150"
@@ -394,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CaptureAndSolve/VisionAPIMethod.swift"
-            timestampString = "506831523.437094"
+            timestampString = "507167292.992488"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "createRequest(with:imageView:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -410,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506840078.659938"
+            timestampString = "507167658.909502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "getStringFromImage(textInImage:imageView:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -426,27 +346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506839624.853489"
+            timestampString = "507167658.909502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "analyzeImage(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506839624.853489"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -458,11 +362,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506840078.659938"
+            timestampString = "507167658.909502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaptureAndSolve/ViewController.swift"
+            timestampString = "507167658.909502"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "getStringFromImage(textInImage:imageView:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -473,14 +393,30 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506840078.659938"
+            filePath = "CaptureAndSolve/DandelionAPIMethod.swift"
+            timestampString = "507165653.152922"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
-            landmarkName = "ViewController"
-            landmarkType = "3">
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "createRequest(with:text2:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaptureAndSolve/DandelionAPIMethod.swift"
+            timestampString = "507165653.152922"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "createRequest(with:text2:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -489,13 +425,189 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CaptureAndSolve/ViewController.swift"
-            timestampString = "506840078.659938"
+            filePath = "CaptureAndSolve/DandelionAPIMethod.swift"
+            timestampString = "507165653.152922"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
-            landmarkName = "getStringFromImage(textInImage:imageView:)"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "createRequest(with:text2:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaptureAndSolve/DandelionAPIMethod.swift"
+            timestampString = "507165653.152922"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "createRequest(with:text2:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CaptureAndSolve.ViewController.createRequest (with : Swift.String, text2 : Swift.String) -&gt; ()"
+                  moduleName = "CaptureAndSolve"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saryal/Documents/Swift/CaptureAndSolve/CaptureAndSolve/DandelionAPIMethod.swift"
+                  timestampString = "507107474.299184"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1482">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CaptureAndSolve.ViewController.(createRequest (with : Swift.String, text2 : Swift.String) -&gt; ()).(closure #1)"
+                  moduleName = "CaptureAndSolve"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saryal/Documents/Swift/CaptureAndSolve/CaptureAndSolve/DandelionAPIMethod.swift"
+                  timestampString = "507107474.300762"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaptureAndSolve/DandelionAPIMethod.swift"
+            timestampString = "507165653.152922"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "createRequest(with:text2:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaptureAndSolve/VisionAPIMethod.swift"
+            timestampString = "507167282.78772"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "createRequest(with:imageView:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaptureAndSolve/VisionAPIMethod.swift"
+            timestampString = "507167285.416735"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "createRequest(with:imageView:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CaptureAndSolve.ViewController.createRequest (with : Swift.String, imageView : __ObjC.UIImageView) -&gt; ()"
+                  moduleName = "CaptureAndSolve"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saryal/Documents/Swift/CaptureAndSolve/CaptureAndSolve/VisionAPIMethod.swift"
+                  timestampString = "507167285.632476"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "3444">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CaptureAndSolve.ViewController.(createRequest (with : Swift.String, imageView : __ObjC.UIImageView) -&gt; ()).(closure #1)"
+                  moduleName = "CaptureAndSolve"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saryal/Documents/Swift/CaptureAndSolve/CaptureAndSolve/VisionAPIMethod.swift"
+                  timestampString = "507167285.63436"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaptureAndSolve/VisionAPIMethod.swift"
+            timestampString = "507167286.229713"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "displayError(_:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaptureAndSolve/ViewController.swift"
+            timestampString = "507167658.909502"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "analyzeImage(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaptureAndSolve/ViewController.swift"
+            timestampString = "507167957.447744"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "analyzeImage(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -13,6 +13,7 @@ class SimilarityViewController: UIViewController {
     // Variable to store text from the images.
     var textFromFirstImage: String = ""
     var textFromSecondImage: String = ""
+    var textSimilarity: Double = -1.0
     
     // Text view to display image text on the screen.
     @IBOutlet weak var firstImageTextView: UITextView!
@@ -21,7 +22,6 @@ class SimilarityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("First \(self.textFromFirstImage)")
         self.updateTextView()
     }
     
@@ -32,9 +32,11 @@ class SimilarityViewController: UIViewController {
     
     func updateTextView(){
         performUIUpdatesOnMain{
-            self.firstImageTextView.text = self.textFromFirstImage
-            self.secondImageTextView.text = self.textFromSecondImage
-            print("Second \(self.textFromSecondImage)")
+            self.firstImageTextView.text = "Below is text similarity"
+            self.secondImageTextView.text = String(self.textSimilarity)
+            print("First  \(self.textFromFirstImage)")
+            print("Second  \(self.textFromSecondImage)")
+            print("Similarity \(self.textSimilarity)")
         }
     }
     
