@@ -18,6 +18,7 @@ class SimilarityViewController: UIViewController {
     // Text view to display image text on the screen.
     @IBOutlet weak var firstImageTextView: UITextView!
     @IBOutlet weak var secondImageTextView: UITextView!
+    @IBOutlet weak var similarityConfidence: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +33,15 @@ class SimilarityViewController: UIViewController {
     
     func updateTextView(){
         performUIUpdatesOnMain{
-            self.firstImageTextView.text = "Below is text similarity"
-            self.secondImageTextView.text = String(self.textSimilarity)
-            print("First  \(self.textFromFirstImage)")
-            print("Second  \(self.textFromSecondImage)")
-            print("Similarity \(self.textSimilarity)")
+            self.firstImageTextView.text = "Text from Primary Image:\n\n\(self.textFromFirstImage)"
+            self.secondImageTextView.text = "Text from Secondary Image:\n\n\(self.textFromSecondImage)"
+            self.similarityConfidence.text = "Similarity Coefficient:\n\(String(self.textSimilarity))"
+            if(self.textSimilarity<0.5){
+                self.similarityConfidence.textColor = UIColor.green
+            }
+            else{
+                self.similarityConfidence.textColor = UIColor.red
+            }
         }
     }
     

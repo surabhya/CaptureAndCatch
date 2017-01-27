@@ -137,17 +137,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mwY-q4-aIP">
-                                <frame key="frameInset" minX="67" minY="159" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Capture and Catch" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mr7-8K-MCB">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FUH-ZV-fNe"/>
+                                </constraints>
+                                <color key="textColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QT7-d6-hKc">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="iDL-Qe-k2p"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nwb-nB-tRD">
-                                <frame key="frameInset" minX="67" minY="402" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cjS-1a-Hbz">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xof-3W-1Iz"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bfG-hG-cl3">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -155,10 +171,25 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QT7-d6-hKc" firstAttribute="leading" secondItem="bfG-hG-cl3" secondAttribute="leading" id="1Ie-nQ-fxF"/>
+                            <constraint firstItem="cjS-1a-Hbz" firstAttribute="top" secondItem="bfG-hG-cl3" secondAttribute="bottom" constant="25" id="3Dy-bm-697"/>
+                            <constraint firstItem="QT7-d6-hKc" firstAttribute="leading" secondItem="VI0-eM-iic" secondAttribute="leadingMargin" constant="51" id="4oj-Pj-0IH"/>
+                            <constraint firstItem="HTl-i8-arp" firstAttribute="top" secondItem="cjS-1a-Hbz" secondAttribute="bottom" constant="68" id="HHT-fU-vJx"/>
+                            <constraint firstItem="QT7-d6-hKc" firstAttribute="top" secondItem="mr7-8K-MCB" secondAttribute="bottom" constant="8" symbolic="YES" id="K7Z-lK-dfl"/>
+                            <constraint firstItem="mr7-8K-MCB" firstAttribute="centerX" secondItem="cjS-1a-Hbz" secondAttribute="centerX" id="R2b-Hd-LPQ"/>
+                            <constraint firstItem="mr7-8K-MCB" firstAttribute="top" secondItem="jN1-69-4Re" secondAttribute="bottom" constant="24" id="SIc-UJ-QYh"/>
+                            <constraint firstItem="mr7-8K-MCB" firstAttribute="centerX" secondItem="bfG-hG-cl3" secondAttribute="centerX" id="Ydl-Wa-OPc"/>
+                            <constraint firstItem="QT7-d6-hKc" firstAttribute="leading" secondItem="cjS-1a-Hbz" secondAttribute="leading" id="aRY-ir-VH7"/>
+                            <constraint firstItem="bfG-hG-cl3" firstAttribute="top" secondItem="QT7-d6-hKc" secondAttribute="bottom" constant="30" id="e5d-vd-4u1"/>
+                            <constraint firstItem="mr7-8K-MCB" firstAttribute="centerX" secondItem="QT7-d6-hKc" secondAttribute="centerX" id="vmc-SC-euE"/>
+                            <constraint firstItem="mr7-8K-MCB" firstAttribute="centerX" secondItem="VI0-eM-iic" secondAttribute="centerX" id="yIR-ew-c9n"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="firstImageTextView" destination="mwY-q4-aIP" id="9NY-gK-Pel"/>
-                        <outlet property="secondImageTextView" destination="nwb-nB-tRD" id="fgx-lZ-AwX"/>
+                        <outlet property="firstImageTextView" destination="QT7-d6-hKc" id="2o8-yS-nLr"/>
+                        <outlet property="secondImageTextView" destination="bfG-hG-cl3" id="L2I-66-6re"/>
+                        <outlet property="similarityConfidence" destination="cjS-1a-Hbz" id="AJ5-nL-t2z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ctu-bX-v8c" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -72,6 +72,9 @@ extension ViewController {
             }
             
             self.getSimilarityFromText(similarity: similarity)
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "similaritySegue", sender: self)
+            }
         }
         task.resume()
     }

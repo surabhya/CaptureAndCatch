@@ -95,14 +95,47 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func analyzeImage(_ sender: AnyObject) {
         self.disableUI(boolean: true)
+        
+        //        let queue = OperationQueue()
+        //
+        //        let operationGetTextFromFirstImage = BlockOperation(block: {
+        //            OperationQueue.main.addOperation({
+        //                if let binaryFirstImageData = self.base64EncodeImage(self.firstImageView.image!) as Optional {
+        //                    self.createRequest(with: binaryFirstImageData as String, imageView: self.firstImageView)
+        //                }
+        //            })
+        //        })
+        //
+        //        let operationGetTextFromSecondImage = BlockOperation(block: {
+        //            OperationQueue.main.addOperation({
+        //                if let binarySecondImageData = self.base64EncodeImage(self.secondImageView.image!) as Optional {
+        //                    self.createRequest(with: binarySecondImageData as String, imageView: self.secondImageView)
+        //                }
+        //            })
+        //        })
+        //
+        //        let operationGetSimilairyConfidence = BlockOperation(block: {
+        //            OperationQueue.main.addOperation({
+        //                if self.textFromFirstImageProcessed && self.textFromSecondImageProcessed {
+        //                    self.createRequest(with: self.textFromFirstImage, text2: self.textFromSecondImage)
+        //                }
+        //            })
+        //        })
+        //
+        //        operationGetTextFromFirstImage.completionBlock = {
+        //            operationGetTextFromSecondImage.completionBlock = {
+        //                operationGetSimilairyConfidence.completionBlock = {
+        //                    print("operationGetSimilairyConfidence completed")
+        //                }
+        //                queue.addOperation(operationGetSimilairyConfidence)
+        //            }
+        //            queue.addOperation(operationGetTextFromSecondImage)
+        //        }
+        //        queue.addOperation(operationGetTextFromFirstImage)
+        
+        
         if let binaryFirstImageData = base64EncodeImage(firstImageView.image!) as Optional {
             createRequest(with: binaryFirstImageData as String, imageView: firstImageView)
-        }
-        if let binarySecondImageData = base64EncodeImage(secondImageView.image!) as Optional {
-            createRequest(with: binarySecondImageData as String, imageView: secondImageView)
-        }
-        if self.textFromFirstImageProcessed && self.textFromSecondImageProcessed {
-            createRequest(with: self.textFromFirstImage, text2: self.textFromSecondImage)
         }
     }
     
@@ -146,9 +179,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if imageView == self.firstImageView {
             self.textFromFirstImage = textInImage
             self.textFromFirstImageProcessed = true
+            if let binarySecondImageData = base64EncodeImage(secondImageView.image!) as Optional {
+                createRequest(with: binarySecondImageData as String, imageView: secondImageView)
+            }
         }else if imageView == self.secondImageView{
             self.textFromSecondImage = textInImage
             self.textFromSecondImageProcessed = true
+            if self.textFromFirstImageProcessed && self.textFromSecondImageProcessed {
+                createRequest(with: self.textFromFirstImage, text2: self.textFromSecondImage)
+            }
         }
     }
     
@@ -158,7 +197,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             self.spinner.hidesWhenStopped = true
         }
         self.similarity = similarity
-        performSegue(withIdentifier: "similaritySegue", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
