@@ -42,7 +42,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var textFromSecondImageProcessed: Bool = false
     
     // Similarity for two images.
-    var similarity = -1.0
+    var similarity = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +54,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.textFromSecondImage = ""
         self.textFromFirstImageProcessed = false
         self.textFromSecondImageProcessed = false
-        self.similarity = -1.0
+        self.similarity = 0.0
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -95,45 +95,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func analyzeImage(_ sender: AnyObject) {
         self.disableUI(boolean: true)
-        
-        //        let queue = OperationQueue()
-        //
-        //        let operationGetTextFromFirstImage = BlockOperation(block: {
-        //            OperationQueue.main.addOperation({
-        //                if let binaryFirstImageData = self.base64EncodeImage(self.firstImageView.image!) as Optional {
-        //                    self.createRequest(with: binaryFirstImageData as String, imageView: self.firstImageView)
-        //                }
-        //            })
-        //        })
-        //
-        //        let operationGetTextFromSecondImage = BlockOperation(block: {
-        //            OperationQueue.main.addOperation({
-        //                if let binarySecondImageData = self.base64EncodeImage(self.secondImageView.image!) as Optional {
-        //                    self.createRequest(with: binarySecondImageData as String, imageView: self.secondImageView)
-        //                }
-        //            })
-        //        })
-        //
-        //        let operationGetSimilairyConfidence = BlockOperation(block: {
-        //            OperationQueue.main.addOperation({
-        //                if self.textFromFirstImageProcessed && self.textFromSecondImageProcessed {
-        //                    self.createRequest(with: self.textFromFirstImage, text2: self.textFromSecondImage)
-        //                }
-        //            })
-        //        })
-        //
-        //        operationGetTextFromFirstImage.completionBlock = {
-        //            operationGetTextFromSecondImage.completionBlock = {
-        //                operationGetSimilairyConfidence.completionBlock = {
-        //                    print("operationGetSimilairyConfidence completed")
-        //                }
-        //                queue.addOperation(operationGetSimilairyConfidence)
-        //            }
-        //            queue.addOperation(operationGetTextFromSecondImage)
-        //        }
-        //        queue.addOperation(operationGetTextFromFirstImage)
-        
-        
         if let binaryFirstImageData = base64EncodeImage(firstImageView.image!) as Optional {
             createRequest(with: binaryFirstImageData as String, imageView: firstImageView)
         }

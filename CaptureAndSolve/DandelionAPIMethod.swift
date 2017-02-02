@@ -38,7 +38,7 @@ extension ViewController {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue(Bundle.main.bundleIdentifier ?? "", forHTTPHeaderField: "X-Ios-Bundle-Identifier")
         
-        var similarity = -1.0
+        var similarity = 0.0
         
         let task = session.dataTask(with: request as URLRequest) { (data, response, error) in
             

@@ -33,15 +33,21 @@ class SimilarityViewController: UIViewController {
     
     func updateTextView(){
         performUIUpdatesOnMain{
-            self.firstImageTextView.text = "Text from Primary Image:\n\n\(self.textFromFirstImage)"
-            self.secondImageTextView.text = "Text from Secondary Image:\n\n\(self.textFromSecondImage)"
-            self.similarityConfidence.text = "Similarity Coefficient:\n\(String(self.textSimilarity))"
+            self.firstImageTextView.text = "\(self.textFromFirstImage)"
+            self.secondImageTextView.text = "\(self.textFromSecondImage)"
+
+            let similarityPercentage = String(format: "%.2f", (self.textSimilarity*100))
+            self.similarityConfidence.text = "\(similarityPercentage)%"
+            
             if(self.textSimilarity<0.5){
                 self.similarityConfidence.textColor = UIColor.green
             }
             else{
                 self.similarityConfidence.textColor = UIColor.red
             }
+            self.firstImageTextView.scrollRangeToVisible(NSMakeRange(0, 0))
+            self.secondImageTextView.scrollRangeToVisible(NSMakeRange(0, 0))
+            self.similarityConfidence.scrollRangeToVisible(NSMakeRange(0, 0))
         }
     }
     
