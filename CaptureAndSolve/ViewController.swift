@@ -28,8 +28,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     // Analyze Image
-    @IBOutlet weak var analyzeImageButton: UIBarButtonItem!
-    
+    @IBOutlet weak var analyzeImageButton: UIButton!
+
     // Boolean value to determine image picker.
     var isFirstImageView = true
     
