@@ -40,10 +40,10 @@ class SimilarityViewController: UIViewController {
             self.similarityConfidence.text = "\(similarityPercentage)%"
             
             if(self.textSimilarity<0.5){
-                self.similarityConfidence.textColor = UIColor.green
+                self.similarityConfidence.textColor = UIColor.init(red: 0, green: 120, blue: 0, alpha: 1)
             }
             else{
-                self.similarityConfidence.textColor = UIColor.red
+                self.similarityConfidence.textColor = UIColor.init(red: 120, green: 0, blue: 0, alpha: 1)
             }
             self.firstImageTextView.scrollRangeToVisible(NSMakeRange(0, 0))
             self.secondImageTextView.scrollRangeToVisible(NSMakeRange(0, 0))
