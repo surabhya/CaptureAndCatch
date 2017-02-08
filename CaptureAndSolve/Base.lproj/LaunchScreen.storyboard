@@ -24,22 +24,23 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="33" id="JFi-7i-CYw"/>
                                     <constraint firstAttribute="height" constant="33" id="h88-vX-qDl"/>
                                 </constraints>
-                                <color key="textColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="1" green="0.6049556581215505" blue="0.15961965388709476" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="3aY-I8-fYy">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="243" id="F6f-AI-cEm"/>
-                                    <constraint firstAttribute="height" constant="314" id="h6F-cN-3p4"/>
+                                    <constraint firstAttribute="width" constant="343" id="F6f-AI-cEm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="309" id="YhA-Iz-lZ7"/>
+                                    <constraint firstAttribute="height" constant="309" id="h6F-cN-3p4"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="0jt-cf-jXe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="38X-uE-6da"/>
-                            <constraint firstItem="3aY-I8-fYy" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="156" id="63c-vM-yc7"/>
+                            <constraint firstItem="3aY-I8-fYy" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="161" id="63c-vM-yc7"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="3aY-I8-fYy" secondAttribute="bottom" constant="177" id="R92-Gz-zUL"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="0jt-cf-jXe" secondAttribute="bottom" constant="100" id="bV9-ei-ORN"/>
                             <constraint firstItem="0jt-cf-jXe" firstAttribute="top" secondItem="3aY-I8-fYy" secondAttribute="bottom" constant="44" id="sBb-WM-od7"/>
@@ -53,6 +54,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="100" height="100"/>
+        <image name="Logo" width="1110" height="781"/>
     </resources>
 </document>

@@ -111,6 +111,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         dismiss(animated: true, completion: nil)
         if (self.firstImageView.image != nil && self.secondImageView.image != nil){
             self.analyzeImageButton.isEnabled = true
+            self.analyzeImageButton.setTitleColor(UIColor.orange, for: UIControlState.normal)
         }
     }
     
@@ -126,6 +127,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             self.secondCameraButton.isEnabled = !boolean
             self.secondGalleryButton.isEnabled = !boolean
             self.analyzeImageButton.isEnabled = !boolean
+            self.analyzeImageButton.setTitleColor(UIColor.lightGray, for: UIControlState.normal)
         } else {
             self.spinner.stopAnimating()
             self.firstCameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)
@@ -133,6 +135,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             self.secondCameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)
             self.secondGalleryButton.isEnabled = !boolean
             self.analyzeImageButton.isEnabled = !boolean
+            self.analyzeImageButton.setTitleColor(UIColor.orange, for: UIControlState.normal)
         }
     }
     
