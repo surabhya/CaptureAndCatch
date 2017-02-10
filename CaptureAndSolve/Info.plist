@@ -27,9 +27,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Capture Iamge</string>
+	<string>Import Images from camera.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Pick Images</string>
+	<string>Import Images from photo library.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

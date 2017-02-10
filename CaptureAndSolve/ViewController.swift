@@ -29,7 +29,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     // Analyze Image
     @IBOutlet weak var analyzeImageButton: UIButton!
-
+    
     // Boolean value to determine image picker.
     var isFirstImageView = true
     
@@ -71,24 +71,32 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func pickFirstImage(_ sender: AnyObject) {
         isFirstImageView = true;
         firstImagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
-        present(firstImagePicker, animated: true, completion: nil)
+        firstImagePicker.modalPresentationStyle = .popover
+        self.present(firstImagePicker, animated: true, completion: nil)
+        firstImagePicker.popoverPresentationController?.barButtonItem = sender as? UIBarButtonItem
     }
     
     @IBAction func clickFirstImage(_ sender: AnyObject) {
         isFirstImageView = true;
         firstImagePicker.sourceType = UIImagePickerControllerSourceType.camera
+        firstImagePicker.cameraCaptureMode = .photo
+        firstImagePicker.modalPresentationStyle = .fullScreen
         self.present(firstImagePicker, animated: true, completion: nil)
     }
     
     @IBAction func pickSecondImage(_ sender: AnyObject) {
         isFirstImageView = false;
         secondImagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
-        present(secondImagePicker, animated: true, completion: nil)
+        secondImagePicker.modalPresentationStyle = .popover
+        self.present(secondImagePicker, animated: true, completion: nil)
+        secondImagePicker.popoverPresentationController?.barButtonItem = sender as? UIBarButtonItem
     }
     
     @IBAction func clickSecondImage(_ sender: AnyObject) {
         isFirstImageView = false;
         secondImagePicker.sourceType = UIImagePickerControllerSourceType.camera
+        secondImagePicker.cameraCaptureMode = .photo
+        secondImagePicker.modalPresentationStyle = .fullScreen
         self.present(secondImagePicker, animated: true, completion: nil)
     }
     
@@ -103,8 +111,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             if isFirstImageView {
+                self.firstImageView.contentMode = .scaleAspectFit
                 self.firstImageView.image = pickedImage
             } else {
+                self.secondImageView.contentMode = .scaleAspectFit
                 self.secondImageView.image = pickedImage
             }
         }
