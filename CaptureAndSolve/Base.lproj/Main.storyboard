@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qJJ-Hb-jgY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qJJ-Hb-jgY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,9 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="33P-Vj-vuM" userLabel="Secod Image Stack View">
+                                <rect key="frame" x="27" y="372" width="323" height="254"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f9M-aT-stP"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f9M-aT-stP">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="254"/>
+                                    </imageView>
                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bu-L4-OvZ">
+                                        <rect key="frame" x="0.0" y="254" width="323" height="0.0"/>
                                         <items>
                                             <barButtonItem title="Gallery" id="up9-mZ-0kd">
                                                 <color key="tintColor" red="1" green="0.60495565809999996" blue="0.15961965389999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -41,9 +48,13 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NdW-Te-F0V" userLabel="First Image Stack View">
+                                <rect key="frame" x="26" y="101" width="323" height="254"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fHA-8a-m2e"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fHA-8a-m2e">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="254"/>
+                                    </imageView>
                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyk-it-9NG">
+                                        <rect key="frame" x="0.0" y="254" width="323" height="0.0"/>
                                         <items>
                                             <barButtonItem title="Gallery" id="N8f-vO-VXw">
                                                 <color key="tintColor" red="1" green="0.60495565809999996" blue="0.15961965389999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -62,6 +73,7 @@
                                 </subviews>
                             </stackView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Capture and Catch" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IHJ-V8-023">
+                                <rect key="frame" x="121" y="64" width="142" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="142" id="5S3-vE-DMo"/>
                                     <constraint firstAttribute="height" constant="30" id="VUp-8I-ZZh"/>
@@ -71,12 +83,14 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="RWo-IW-uJa">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="H6M-fM-7DB"/>
                                     <constraint firstAttribute="height" constant="20" id="zfJ-cw-CyV"/>
                                 </constraints>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpE-ai-PLf">
+                                <rect key="frame" x="161" y="637" width="63" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="63" id="Sbm-Df-Q6Z"/>
                                     <constraint firstAttribute="height" constant="30" id="lFU-Ui-HVO"/>
@@ -138,6 +152,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Capture and Catch" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mr7-8K-MCB">
+                                <rect key="frame" x="113" y="72" width="141" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="141" id="6eL-Xv-wOy"/>
                                     <constraint firstAttribute="height" constant="18" id="OjF-ck-Bds"/>
@@ -147,6 +162,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text from Primary Image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWk-Fy-aXu">
+                                <rect key="frame" x="94" y="112" width="187" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="187" id="2dR-uI-8gh"/>
                                     <constraint firstAttribute="height" constant="20.5" id="ZVd-D6-E8I"/>
@@ -156,6 +172,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QT7-d6-hKc">
+                                <rect key="frame" x="16" y="148" width="343" height="189"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="tlt-tF-QMp"/>
                                 </constraints>
@@ -164,6 +181,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text from Secondary Image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoJ-D1-ZQh">
+                                <rect key="frame" x="82.5" y="363" width="210.5" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20.5" id="ZXY-fr-bnd"/>
                                     <constraint firstAttribute="width" constant="210.5" id="uxg-gK-y4u"/>
@@ -173,6 +191,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bfG-hG-cl3">
+                                <rect key="frame" x="16" y="400" width="343" height="189"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="AHI-ma-Fcg"/>
                                     <constraint firstAttribute="height" constant="189" id="f8a-at-tVs"/>
@@ -182,6 +201,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjS-1a-Hbz">
+                                <rect key="frame" x="115" y="607" width="145" height="52"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="145" id="MJf-fF-Hc4"/>
